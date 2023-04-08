@@ -34,10 +34,10 @@ public class SecurityConfiguration {
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         return http
                 .authorizeHttpRequests()
-                .requestMatchers("/api/v1/notes").permitAll()
+                .requestMatchers("/notes").permitAll()
 
-                .requestMatchers("/api/v1/notes").hasRole("user")
-                .requestMatchers("/api/v1/user/create").permitAll()
+                .requestMatchers("/notes").hasRole("user")
+                .requestMatchers("/user/create").permitAll()
                 .and().build();
     }
 }
