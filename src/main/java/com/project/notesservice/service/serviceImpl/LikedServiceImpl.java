@@ -4,12 +4,11 @@ import com.project.notesservice.entity.LikeEntity;
 import com.project.notesservice.repository.LikeRepository;
 import com.project.notesservice.service.LikeService;
 import lombok.AllArgsConstructor;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
 @Service
 @AllArgsConstructor
-public class LikeServiceImpl implements LikeService {
+public class LikedServiceImpl implements LikeService {
     private final LikeRepository likeRepository;
 
     @Override

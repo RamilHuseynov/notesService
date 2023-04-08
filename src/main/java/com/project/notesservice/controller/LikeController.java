@@ -14,7 +14,7 @@ public class LikeController {
     private final LikeService likeService;
 
     @PostMapping("/")
-    public void like(@RequestParam(name = "userId")String likingUserId, @RequestParam(name = "noteId")String likedNoteId) {
-        likeService.likeNote(likingUserId, likedNoteId);
+    public void like(@RequestParam(name = "userId")String likedUserId, @RequestParam(name = "noteId")String likedNoteId) {
+        likeService.likeNote(likedUserId, likedNoteId);
     }
 }
