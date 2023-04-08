@@ -1,5 +1,6 @@
 package com.project.notesservice.entity;
 
+import java.time.LocalDateTime;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,5 +16,5 @@ public class NoteEntity {
     private String id;
     private String userId;
     private String text;
-    private String creatDate;
+    private LocalDateTime creatDate;
 }
